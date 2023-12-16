@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        body {
+            display: block;
+            background-image: url();
+        }
+
+        input {
+            border: solid black 2px;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .calculadora {
+            justify-content: center;
+            align-items: center; 
+            text-align: center;
+            margin-top: 150px;
+            margin-left: 500px;
+            margin-right: 500px;
+            border: solid black 1px;
+            border-radius: 10px;
+            padding: 50px;
+
+        }
+
+        .botao {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            background-color: grey;
+        }
+    </style>
+    <script>
+
+        function MostrarNaTela(value){
+            document.getElementById('tela').value += value;
+        }
+
+        function LimparTela(){
+            document.getElementById('tela').value = '';
+        }
+
+        function Calcular() {
+            var displayValue = document.getElementById('tela').value;
+            try {
+            document.getElementById('tela').value = eval(displayValue);
+            } catch (error) {
+            document.getElementById('tela').value = 'Error';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="calculadora">   
+        <h3>Calculadora</h3>
+        <input type="text" id="tela" readonly><br>
+            <div class="numeros">
+                <br>
+                <button onclick="MostrarNaTela('1')" class="botao">1</button>
+                <button onclick="MostrarNaTela('2')" class="botao">2</button>
+                <button onclick="MostrarNaTela('3')" class="botao">3</button><br>
+                <button onclick="MostrarNaTela('4')" class="botao">4</button>
+                <button onclick="MostrarNaTela('5')" class="botao">5</button>
+                <button onclick="MostrarNaTela('6')" class="botao">6</button><br>
+                <button onclick="MostrarNaTela('7')" class="botao">7</button>
+                <button onclick="MostrarNaTela('8')" class="botao">8</button>
+                <button onclick="MostrarNaTela('9')" class="botao">9</button><br>
+                <button onclick="MostrarNaTela('0')" class="botao">0</button>
+            </div>
+            <div class="sinais">
+                <br>
+                <button onclick="MostrarNaTela('+')" class="botao">+</button>
+                <button onclick="MostrarNaTela('-')" class="botao">-</button>
+                <button onclick="MostrarNaTela('/')" class="botao">/</button>
+                <button onclick="MostrarNaTela('*')" class="botao">*</button>
+                <button onclick="Calcular()" class="botao">=</button>
+                <button onclick="LimparTela()" class="botao">C</button>
+            </div>
+    </div>
+</body>
+</html>

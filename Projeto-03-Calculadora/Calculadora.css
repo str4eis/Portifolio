@@ -1,0 +1,64 @@
+body {
+    display: block;
+    background-image: url('fundo.jpg');
+}
+
+header {
+background-color: rgba(255, 255, 255, 0.7) ;
+margin: 0px;
+text-align: center;
+border: solid black 1px;
+border-radius: 10px;
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+a {
+    background-color: grey;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: solid black 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input {
+    border: solid black 2px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.calculadora {
+    background-color: rgba(255, 255, 255, 0.7);
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border: solid black 1px;
+    border-radius: 10px;
+    padding: 50px;
+
+}
+
+button {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 12;
+    margin: 3px;
+    border: solid black 1px;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    background-color: grey;
+    size: 10px;
+}
