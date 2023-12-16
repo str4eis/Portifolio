@@ -1,3 +1,7 @@
+body{
+   background-color: black;
+}
+
 .principal {
     width: 100%;
     margin: 0 auto;
@@ -11,20 +15,24 @@
 
 header {
     grid-area: cabecalho;
-    background-color: #48CFE0;
+    background-color: #194c78;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 2px;
+    color: white;
+    text-decoration: none;    
+
  }
 
- .navbar {
-    display: block;
+ .item {
+   color: white;
+   text-decoration: none;
+   font-size: 18px;
  }
  
  section {
      grid-area: secao;
-     background-color: #E05DA1;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -47,8 +55,10 @@ header {
  }
  .p1, .p2, .p3, .p4 {
     width: 25%;
-    background-color: #5de05e;
+    background-color: #194c78;
     text-align: center;
+    color: white;
+    text-decoration: none;
  }
 
  .p2 {
