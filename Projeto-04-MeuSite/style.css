@@ -1,0 +1,60 @@
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: 100px 450px 150px;
+    grid-template-areas: "cabecalho cabecalho" 
+                         "secao barra-lateral" 
+                         "rodape rodape";
+}
+
+header {
+    grid-area: cabecalho;
+    background-color: #48CFE0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ 
+ section {
+     grid-area: secao;
+     background-color: #E05DA1;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+ 
+  aside {
+     grid-area: barra-lateral;
+     background-color: #E0D475;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+ 
+  footer {
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-evenly;
+ }
+ .p1, .p2, .p3, .p4 {
+    width: 25%;
+    background-color: #5de05e;
+    text-align: center;
+ }
+
+ .p2 {
+    width: 50%;
+    margin: 0 2px;
+ }
+
+ .p3 {
+    margin: 0;
+ }
+ .p4 {
+
+    margin: 0 2px
+
+ }
+
