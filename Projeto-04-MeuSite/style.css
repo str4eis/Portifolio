@@ -16,6 +16,10 @@ header {
     justify-content: space-around;
     align-items: center;
  }
+
+ .navbar {
+    display: block;
+ }
  
  section {
      grid-area: secao;
