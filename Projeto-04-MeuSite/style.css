@@ -11,6 +11,7 @@ body{
     grid-template-areas: "cabecalho cabecalho" 
                          "secao barra-lateral" 
                          "rodape rodape";
+   
 }
 
 header {
@@ -52,13 +53,15 @@ header {
     grid-area: rodape;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+    margin-bottom: 0;
  }
  .p1, .p2, .p3, .p4 {
     width: 25%;
     background-color: #194c78;
     text-align: center;
     color: white;
-    text-decoration: none;
  }
 
  .p2 {
