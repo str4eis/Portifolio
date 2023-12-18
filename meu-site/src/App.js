@@ -2,7 +2,7 @@
 //componentes
 import Navbar from './components/Navbar';
 
-//pages
+//paginas
 import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Formacao from './pages/Formacao/Formacao';

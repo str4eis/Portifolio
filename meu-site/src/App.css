@@ -79,3 +79,7 @@ section {
 
 }
 
+footer a:hover {
+   text-shadow: 0.1em 0.1em 0.2em white;
+}
+
