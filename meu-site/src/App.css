@@ -5,9 +5,10 @@ body{
 .principal {
    width: 100%;
    margin: 0 auto;
+   margin-top: 2px;
    display: grid;
    grid-template-columns: 75% 25%;
-   grid-template-rows: 100px 450px 150px;
+   grid-template-rows: auto;
    grid-template-areas: "cabecalho cabecalho" 
                         "secao barra-lateral" 
                         "rodape rodape";
@@ -38,6 +39,7 @@ section {
     justify-content: center;
     align-items: center;
     background-color: aquamarine;
+    
  }
 
  aside {
@@ -66,7 +68,6 @@ section {
 }
 
 .p2 {
-   width: 50%;
    margin: 0 2px;
 }
 

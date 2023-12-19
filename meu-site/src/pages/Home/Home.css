@@ -1,29 +1,15 @@
-.principal {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 100px 450px 150px;
-    grid-template-areas: "cabecalho cabecalho" 
-                         "secao barra-lateral" 
-                         "rodape rodape";
- }
-
- .item {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-  }
-  
   section {
+      margin-top: auto;
       grid-area: secao;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: aquamarine;
+      flex-direction: column;
    }
   
    aside {
+      margin-top: 2px;
       grid-area: barra-lateral;
       background-color: #E0D475;
       display: flex;

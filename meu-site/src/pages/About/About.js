@@ -1,3 +1,6 @@
+
+import "./About.css";
+
 const About = () => {
     return (
         <div className="principal">     
@@ -6,7 +9,10 @@ const About = () => {
       </section>
 
       <aside>
-        <p>Índice</p>
+        <p>Quem sou?</p>
+        <p>Por que criei este site?</p>
+        <p>Meus objetivos</p>
+        <p>Meritos e prêmios</p>
       </aside>
 
     </div>

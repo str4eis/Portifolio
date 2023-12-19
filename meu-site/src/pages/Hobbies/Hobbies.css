@@ -1,15 +1,4 @@
-.principal {
-    width: 100%;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 75% 25%;
-    grid-template-rows: 100px 450px 150px;
-    grid-template-areas: "cabecalho cabecalho" 
-                         "secao barra-lateral" 
-                         "rodape rodape";
- }
 
-  
   section {
       grid-area: secao;
       display: flex;
