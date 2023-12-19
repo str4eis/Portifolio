@@ -19,7 +19,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App"> {/*Tudo que estiver dentro da div no app.js será fixo na página*/}
 
       <header>
         <img src="/icon.jpg" height="70px" width="70px" alt="Logo" />
@@ -27,7 +27,9 @@ function App() {
         
       </header>
 
-      <BrowserRouter>
+
+
+      <BrowserRouter> {/*Caminhos usando o routes para outras pages*/}
       <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
