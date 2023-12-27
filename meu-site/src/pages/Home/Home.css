@@ -17,3 +17,10 @@
       align-items: center;
       margin: 0 2px;
    }
+
+
+   .container {
+      max-width:200px;
+      max-height:150px;
+      
+  }
