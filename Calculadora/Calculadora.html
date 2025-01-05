@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
@@ -10,21 +11,12 @@
 </head>
 
 <header>
-<h1>Calculadora</h1><br>
-    <div class="navbar">
-        <a href="navbar/media.html">Média</a>
-        <a href="navbar/primo.html">N.Primo</a>
-        <a href="navbar/par.html">N.Par</a>
-        <a href="navbar/conversor.html">Conversor</a>
-        <a href="navbar/area.html">Área</a>
-        <a href="navbar/desconto.html">Desconto</a>
-        <a href="navbar/fatorial.html">Fatorial</a>
-    </div>
+<h1>Calculadora</h1>
 </header>
 
 <body>
     <div class="calculadora">   
-        <label for="tela"><h3>Calculadora</h3></label>
+        <label for="tela"></label>
         <input type="text" id="tela" readonly><br>
             <div class="numeros">
                 <br>
@@ -39,6 +31,7 @@
                 <button onclick="MostrarNaTela('9')" class="botao">9</button><br>
                 <button onclick="MostrarNaTela('0')" class="botao">0</button>
             </div>
+            
             <div class="sinais">
                 <br>
                 <button onclick="MostrarNaTela('+')" class="botao">+</button>
@@ -48,6 +41,7 @@
                 <button onclick="Calcular()" class="botao">=</button>
                 <button onclick="LimparTela()" class="botao">C</button>
             </div>
+            
     </div>
     <script src="Calculadora.js"></script>
 </body>
